@@ -1,0 +1,107 @@
+<View style="display: flex; flex-direction: column; gap: 20px;">
+
+    <View style="position: sticky; top: 0; z-index: 100; background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); max-height: 40vh; overflow-y: auto;">
+        <View style="display: flex; flex-wrap: wrap; flex-direction: row; gap: 12px;">
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="Lexicales et terminologiques"/>
+                <Taxonomy name="lexi-termino" toName="text" labeling="true">
+                    <Choice value="A1_term_inexact" color="#e6a21b"/>
+                    <Choice value="A2_term_paraphr" color="#e6a21b"/>
+                    <Choice value="A3_creation_litt" color="#e6a21b"/>
+                    <Choice value="A4_non-trad" color="#e6a21b"/>
+                    <Choice value="A5_DNT_traduit" color="#e6a21b"/>
+                    <Choice value="A6_err_choixlexical" color="#e6a21b"/>
+                    <Choice value="A7_term-mot_langue_ge" color="#e6a21b"/>
+                    <Choice value="B1_diff_trads_terme" color="#fede4d"/>
+                    <Choice value="B2_diff_trads_var" color="#fede4d"/>
+                    <Choice value="B3_same_trad_term_var" color="#fede4d"/>
+                  	<Choice value="B4_same_trad_diff_var" color="#fede4d"/>
+                  	<Choice value="B5_term_incorrect_incoherent" color="#fede4d"/>  
+                  	<Choice value="B6_var_incorrect_incoherent" color="#fede4d"/>
+                  	<Choice value="B7_same_incorrect_trad_term_var" color="#fede4d"/>
+                  	<Choice value="0" color="#d6d6d6"/>
+                    <Choice value="1" color="#d6d6d6"/>
+                    <Choice value="2" color="#d6d6d6"/>
+                    <Choice value="3" color="#d6d6d6"/>
+                </Taxonomy>
+            </View>
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="Syntaxiques et structurelles"/>
+                <Taxonomy name="synt-struct" toName="text" labeling="true">
+                    <Choice value="C1_err_tete" color="#35aa32"/>
+                    <Choice value="C2_err_modifieur" color="#35aa32"/>
+                    <Choice value="C3_ordre_constituant" color="#35aa32"/>
+                    <Choice value="D1_restitution_liens_sem" color="#87e285"/>
+                    <Choice value="D2_factorisation" color="#87e285"/>
+                    <Choice value="0" color="#d6d6d6"/>
+                    <Choice value="1" color="#d6d6d6"/>
+                    <Choice value="2" color="#d6d6d6"/>
+                    <Choice value="3" color="#d6d6d6"/>
+                </Taxonomy>
+            </View>
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="Adaptation à la langue cible"/>
+                <Taxonomy name="lang-cib" toName="text" labeling="true">
+                    <Choice value="E1_explicitation" color="#0e89ea"/>
+                    <Choice value="E2_calque" color="#0e89ea"/>
+                    <Choice value="F1_det_nbr_genre" color="#72a9c5"/>
+                    <Choice value="F2_err_prep" color="#72a9c5"/>
+                    <Choice value="F3_err_collocation" color="#72a9c5"/>
+                    <Choice value="F4_err_ortho" color="#72a9c5"/>
+                    <Choice value="0" color="#d6d6d6"/>
+                    <Choice value="1" color="#d6d6d6"/>
+                    <Choice value="2" color="#d6d6d6"/>
+                    <Choice value="3" color="#d6d6d6"/>
+                </Taxonomy>
+            </View>
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="Transfert"/>
+                <Taxonomy name="transfert" toName="text" labeling="true">
+                    <Choice value="G1_ajout" color="#8931f3"/>
+                    <Choice value="G2_omission" color="#8931f3"/>
+                    <Choice value="G3_hallucination" color="#8931f3"/>
+                    <Choice value="H1_err_poids" color="#ac91cc"/>
+                    <Choice value="H2_registre" color="#ac91cc"/>
+                    <Choice value="0" color="#d6d6d6"/>
+                    <Choice value="1" color="#d6d6d6"/>
+                    <Choice value="2" color="#d6d6d6"/>
+                    <Choice value="3" color="#d6d6d6"/>
+                </Taxonomy>
+            </View>
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="Absence erreur"/>
+                <Taxonomy name="absence" toName="text" labeling="true">
+                    <Choice value="I_non_erreur" color="#e11b86"/>
+                    <Choice value="0" color="#d6d6d6"/>
+                    <Choice value="1" color="#d6d6d6"/>
+                    <Choice value="2" color="#d6d6d6"/>
+                    <Choice value="3" color="#d6d6d6"/>
+                </Taxonomy>
+            </View>
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="Type annotateur"/>
+                <Taxonomy name="type-anno" toName="text" labeling="true">
+                    <Choice value="J_type_ann" color="#fa8371"/>
+                </Taxonomy>
+            </View>
+
+            <View style="flex: 1 1 calc(33.33% - 8px); max-width: calc(33.33% - 8px);">
+                <Header style="margin-bottom: 2px; font-size: 12px; font-weight: 500; color: #555;" value="English annotation"/>
+                <Taxonomy name="english" toName="text" labeling="true">
+                    <Choice value="TV" color="#ffce90"/>
+                    <Choice value="V" color="#ffce90"/>
+                </Taxonomy>
+            </View>
+
+        </View>
+    </View>
+
+    <Text name="text" value="$text" granularity="word" style="padding: 10px; white-space: normal; overflow-wrap: anywhere; word-break: break-word;"/>
+
+</View>
